@@ -16,6 +16,7 @@ use Laravel\Cashier\Cashier;
 use App\Package;
 use Carbon\Carbon;
 use Laravel\Cashier\Subscription;
+use Illuminate\Support\Facades\Hash;
 
 class SettingsController extends Controller
 {

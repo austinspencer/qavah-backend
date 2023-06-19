@@ -210,5 +210,11 @@ class User extends Authenticatable implements MustVerifyEmail
            return $this->hasOne(user_profile_verified::class, 'user_id');
     }
     
+    public function prefrences()
+    {
+        return $this->hasOne(user_prefrence::class, 'user_id', 'id')->select(["*"]);
+    }
+
     
+
 }
